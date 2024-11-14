@@ -1,9 +1,3 @@
-BioMa_/
-│
-├── index.html              # Página principal do site
-├── css/
-│   └── styles.css          # Estilos do site
-├── js/
-│   └── main.js             # Funcionalidades JavaScript
-└── assets/
-    └── images/             # Imagens do projeto (logo, ícones, etc.)
+# BioMap_
+
+Este exemplo fornece uma interface simples onde os usuários podem registrar observações de fauna e visualizá-las em uma tabela diretamente na página da web.
