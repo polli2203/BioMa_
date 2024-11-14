@@ -1,49 +1,41 @@
+# BioMap: Plataforma Simples de Monitoramento de Fauna
+
+## Descrição
+BioMap é uma aplicação web simples que permite aos biólogos registrar observações de fauna diretamente em um navegador. A solução inclui formulários para coleta de dados e uma visualização básica em uma tabela.
+
+## Estrutura do Projeto
+Este projeto utiliza apenas HTML, CSS e JavaScript para funcionar de forma simples e eficaz.
+
+### Código HTML
+```html
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BioMap - Plataforma de Monitoramento e Análise</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioMap</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>BioMap</h1>
-    <p>Plataforma de Monitoramento e Análise para Biólogos de Fauna</p>
-  </header>
-
-  <main>
-    <!-- Seções da plataforma -->
-    <section id="features">
-      <h2>Funcionalidades</h2>
-      <ul>
-        <li>Registro intuitivo e geolocalizado</li>
-        <li>Reconhecimento automático de espécies</li>
-        <li>Relatórios automáticos e exportáveis</li>
-        <li>Modo offline para áreas remotas</li>
-      </ul>
-    </section>
-
-    <section id="demo">
-      <h2>Simulação</h2>
-      <p>Experimente um protótipo da interface de registro de dados:</p>
-      <div id="form-container">
-        <form id="observation-form">
-          <label for="species">Espécie Observada:</label>
-          <input type="text" id="species" name="species" required>
-
-          <label for="location">Localização:</label>
-          <input type="text" id="location" name="location" required>
-
-          <label for="notes">Notas:</label>
-          <textarea id="notes" name="notes"></textarea>
-
-          <button type="submit">Salvar Observação</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <script src="js/main.js"></script>
+    <h1>Registro de Observações de Fauna</h1>
+    <form id="observationForm">
+        <input type="text" id="speciesName" placeholder="Nome da Espécie" required>
+        <input type="text" id="location" placeholder="Localização" required>
+        <textarea id="notes" placeholder="Notas"></textarea>
+        <button type="submit">Adicionar Observação</button>
+    </form>
+    <h2>Observações Registradas</h2>
+    <table id="observationsTable">
+        <thead>
+            <tr>
+                <th>Nome da Espécie</th>
+                <th>Localização</th>
+                <th>Notas</th>
+            </tr>
+        </thead>
+        <tbody id="observationsBody">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
 </body>
 </html>
