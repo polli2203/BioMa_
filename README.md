@@ -1,4 +1,4 @@
-BioMap/
+BioMa_/
 │
 ├── index.html              # Página principal do site
 ├── css/
